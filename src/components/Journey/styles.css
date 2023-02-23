@@ -1,0 +1,105 @@
+.wrapper-journey {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 3.6rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+.journey {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.wrapper-journey img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.wrapper-journey h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.wrapper-journey h3 {
+  display: none;
+}
+
+.wrapper-journey#_eca8e48a-57b3-46a1-a6ae-923aca77fc11 {
+  border: 2px solid #991f3c;
+  transition: all 0.5s ease-out;
+}
+
+.wrapper-journey#_eca8e48a-57b3-46a1-a6ae-923aca77fc11:hover {
+  background-color: #991f3c;
+  box-shadow: 0px 0px 15px 5px rgba(242,239,242,0.8);
+}
+
+.wrapper-journey#_e774057d-f0e8-4d5f-8076-33522fffb96d {
+  border: 2px solid #045959;
+  transition: all 0.5s ease-out;
+}
+
+.wrapper-journey#_e774057d-f0e8-4d5f-8076-33522fffb96d:hover {
+  background-color: #045959;
+  box-shadow: 0px 0px 15px 5px rgba(242,239,242,0.8);
+}
+
+
+.wrapper-journey#_ea9d3a03-bfb4-4160-b59a-6cc30e15b3af {
+  border: 2px solid #721f99;
+  transition: all 0.5s ease-out;
+}
+
+.wrapper-journey#_ea9d3a03-bfb4-4160-b59a-6cc30e15b3af:hover {
+  background-color: #721f99;
+  box-shadow: 0px 0px 15px 5px rgba(242,239,242,0.8);
+}
+
+.wrapper-journey#_73a0e476-b7b1-464d-9d73-8faa71b44922 {
+  border: 2px solid #086600;
+  transition: all 0.5s ease-out;
+}
+
+.wrapper-journey#_73a0e476-b7b1-464d-9d73-8faa71b44922:hover {
+  background-color: #086600;
+  box-shadow: 0px 0px 15px 5px rgba(242,239,242,0.8);
+}
+
+@media (min-width: 1024px) {
+  .wrapper-journey {
+    width: 46rem;
+    height: 28rem;
+    justify-content: unset;
+    padding: 1.5rem;
+  }
+
+  .journey {
+    margin-bottom: 2.4rem;
+  }
+
+  .wrapper-journey h3 {
+    display: initial;
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-align: justify;
+    opacity: 0.6;
+    margin-bottom: 0;
+  }
+  
+  .wrapper-journey div.journey-description {
+    height: 14rem;
+    text-align: justify;
+  }
+
+  .wrapper-journey h3.journey-courses-quantity {
+    padding-right: 0;
+    font-size: 1.4rem;
+    text-align: end;
+  }
+}

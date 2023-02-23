@@ -1,0 +1,40 @@
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+  height: 100vh;
+  background-color: #000000;
+}
+
+h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+a {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1, h2, h3, a{
+  text-align: center;
+}

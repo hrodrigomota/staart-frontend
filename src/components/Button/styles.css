@@ -1,0 +1,16 @@
+.button {
+    width: 35rem;
+    height: 5rem;
+    background-color: #E4105F;
+    border: none;
+    border-radius: 0.5rem;
+    color: #FFFFFF;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    align-content: center;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
