@@ -38,7 +38,7 @@ export function ForgotPassword() {
           onChange={(event) => setEmail(event.target.value)}
         />
         <Button disabled={loading} title="Enviar" />
-        <a href="/">Já tenho uma conta</a>
+        <a onClick={() => navigate("/")}>Já tenho uma conta</a>
       </form>
     </div>
   );

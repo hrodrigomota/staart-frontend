@@ -78,7 +78,7 @@ export function Register() {
             onChange={(event) => setPassword(event.target.value)}
           />
           <Button disabled={loading} title="Cadastrar" />
-          <a href="/">Já tenho uma conta</a>
+          <a onClick={() => navigate("/")}>Já tenho uma conta</a>
         </form>
       </div>
     </div>
