@@ -69,8 +69,8 @@ export function Home() {
             onChange={(event) => setPassword(event.target.value)}
           />
           <Button disabled={loading} title="Entrar" />
-          <a href="/register">Criar minha conta</a>
-          <a href="/forgot-password">🔒 Esqueci minha senha</a>
+          <a onClick={() => navigate('/register')}>Criar minha conta</a>
+          <a onClick={() => navigate('/forgot-password')}>🔒 Esqueci minha senha</a>
         </form>
       </div>
     </div>
