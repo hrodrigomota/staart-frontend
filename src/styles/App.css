@@ -38,3 +38,207 @@ a {
 h1, h2, h3, a{
   text-align: center;
 }
+
+.wrapper-home,
+.wrapper-register,
+.wrapper-forgot-password,
+.wrapper-not-found {
+  max-width: 39rem;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper-not-found {
+  margin: 10rem auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.wrapper-forgot-password {
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container-home,
+.container-register {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.slogan-home,
+.form-home,
+.form-register,
+.form-forgot-password {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.slogan-register {
+  display: none;
+}
+
+.form-register,
+.form-forgot-password {
+  margin-top: 8rem;
+}
+
+.form-register a {
+  margin: 0 auto;
+}
+
+form input {
+  background-color: #d9d9d9;
+  width: 35rem;
+  height: 5rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1.6rem 1.5rem;
+}
+
+form input:focus {
+  outline: 2px solid #E4105F;
+}
+
+img.logo {
+  margin-top: 2rem;
+  width: 10rem;
+  height: 4rem;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+img.capa {
+  width: 35rem;
+  height: 35rem;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.wrapper-journeys,
+.wrapper-courses, 
+.wrapper-classes {
+  max-width: 39rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.wrapper-journeys .filter {
+  font-size: 1.2rem;
+  text-align: end;
+  margin-bottom: 3.2rem;
+}
+
+.wrapper-journeys h1 {
+  margin-bottom: 4.2rem;
+}
+
+.wrapper-journeys h2 {
+  margin-bottom: 0.8rem;
+}
+
+.wrapper-courses h2,
+.wrapper-classes h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  text-align: justify;
+}
+
+.wrapper-journeys h3 {
+  margin-bottom: 3.2rem;
+  opacity: 0.8;
+}
+
+.wrapper-courses h3,
+.wrapper-classes h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 4.2rem;
+  text-align: justify;
+  opacity: 0.8;
+}
+
+@media (min-width: 1024px) {
+  .wrapper-home,
+  .wrapper-register,
+  .wrapper-forgot-password,
+  .wrapper-not-found {
+    width: 90%;
+    max-width: 102.4rem;
+  }
+
+  .wrapper-home,
+  .wrapper-register {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img.logo {
+    margin-top: 0;
+    width: 24rem;
+    height: auto;
+    position: relative;
+  }
+
+  .container-home,
+  .container-register {
+    flex-direction: row;
+    align-items: center;
+    gap: 12rem;
+  }
+
+  .slogan-home,
+  .slogan-register {
+    gap: 1.5rem;
+  }
+
+  .slogan-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-home,
+  .form-register {
+    width: 55rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-register,
+  .form-forgot-password {
+    margin-top: 0;
+  }
+
+  .form-forgot-password input, .form-forgot-password button {
+    width: 100%;
+  }
+
+  .wrapper-journeys,
+  .wrapper-courses,
+  .wrapper-classes {
+    max-width: 98.4rem;
+  }
+
+  .container-journeys {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .wrapper-journeys h2,
+  .wrapper-journeys h3 {
+    text-align: justify;
+  }
+}

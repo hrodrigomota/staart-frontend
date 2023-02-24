@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "../../components/Button";
 import { useAuth } from "../../context/authContext";
 
-import "../../styles/ForgotPassword.css";
+import "../../styles/App.css";
 
 export function ForgotPassword() {
   const { resetPassword } = useAuth();
@@ -30,7 +30,7 @@ export function ForgotPassword() {
 
   return (
     <div className="wrapper-forgot-password">
-      <img src="/staart_logo.png" className="logo-home" alt="Logo Staart" />
+      <img src="/staart_logo.png" className="logo" alt="Logo Staart" />
       <form onSubmit={handleSubmit} className="form-forgot-password">
         <h2>Digite o e-mail cadastrado para redefinir a sua senha!</h2>
         <input

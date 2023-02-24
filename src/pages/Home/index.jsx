@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import "../../styles/Home.css";
+import "../../styles/App.css";
 
 import { Button } from "../../components/Button";
 
@@ -39,7 +39,7 @@ export function Home() {
 
   return (
     <div className="wrapper-home">
-      <img src="/staart_logo.png" className="logo-home" alt="Logo Staart" />
+      <img src="/staart_logo.png" className="logo" alt="Logo Staart" />
       <div className="container-home">
         <div className="slogan-home">
           <img

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import "../../styles/Register.css";
+import "../../styles/App.css";
 
 import { Button } from "../../components/Button";
 
@@ -41,7 +41,7 @@ export function Register() {
 
   return (
     <div className="wrapper-register">
-      <img src="/staart_logo.png" className="logo-register" alt="Logo Staart" />
+      <img src="/staart_logo.png" className="logo" alt="Logo Staart" />
       <div className="container-register">
         <div className="slogan-register">
           <img

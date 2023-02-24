@@ -1,4 +1,4 @@
-import "../../styles/NotFound.css";
+import "../../styles/App.css";
 
 import cloudError from "/cloud-error.svg";
 

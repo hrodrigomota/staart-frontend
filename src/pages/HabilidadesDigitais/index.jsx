@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom';
 
-import "../../styles/Course.css";
+import "../../styles/App.css";
 
 import { Header } from "../../components/Header";
 import { Course } from "../../components/Course";
