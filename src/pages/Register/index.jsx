@@ -64,18 +64,21 @@ export function Register() {
             value={userName}
             placeholder="Nome Completo"
             onChange={(event) => setUserName(event.target.value)}
+            required
           />
           <input
             type="email"
             value={email}
             placeholder="E-mail"
             onChange={(event) => setEmail(event.target.value)}
+            required
           />
           <input
             type="password"
             value={password}
             placeholder="Senha"
             onChange={(event) => setPassword(event.target.value)}
+            required
           />
           <Button disabled={loading} title="Cadastrar" />
           <a onClick={() => navigate("/")}>Já tenho uma conta</a>

@@ -14,6 +14,7 @@ export function ForgotPassword() {
   async function handleSubmit(element) {
     element.preventDefault();
     setLoading(true);
+
     try {
       await resetPassword(email);
       alert(
@@ -22,6 +23,7 @@ export function ForgotPassword() {
       navigate("/");
     } catch (error) {
       alert("Ocorreu um erro ao tentar redefinir a sua senha. Tente novamente.")
+      setEmail("");
     }
     setLoading(false);
   }
@@ -30,12 +32,13 @@ export function ForgotPassword() {
     <div className="wrapper-forgot-password">
       <img src="/staart_logo.png" className="logo-home" alt="Logo Staart" />
       <form onSubmit={handleSubmit} className="form-forgot-password">
-        <h2>Digite o e-mail cadastrado para receber uma nova senha!</h2>
+        <h2>Digite o e-mail cadastrado para redefinir a sua senha!</h2>
         <input
           type="email"
           placeholder="E-mail"
           value={email}
           onChange={(event) => setEmail(event.target.value)}
+          required
         />
         <Button disabled={loading} title="Enviar" />
         <a onClick={() => navigate("/")}>Já tenho uma conta</a>

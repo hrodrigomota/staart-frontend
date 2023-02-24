@@ -25,7 +25,7 @@ export function Home() {
       return;
     }
     try {
-      const login = await signIn(email, password);
+      await signIn(email, password);
       navigate("/journeys");
     } catch (error) {
       setLoading(false);
@@ -61,12 +61,14 @@ export function Home() {
             placeholder="E-mail"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
+            required
           />
           <input
             type="password"
             placeholder="Senha"
             value={password}
             onChange={(event) => setPassword(event.target.value)}
+            required
           />
           <Button disabled={loading} title="Entrar" />
           <a onClick={() => navigate('/register')}>Criar minha conta</a>
