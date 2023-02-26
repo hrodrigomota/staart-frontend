@@ -71,7 +71,9 @@ export function Home() {
             required
           />
           <Button disabled={loading} title="Entrar" />
-          <a onClick={() => navigate('/register')}>Criar minha conta</a>
+          <div className="create-account">
+          <span>Não tem uma conta?</span> &nbsp;<a onClick={() => navigate('/register')}>Cadastre-se</a>
+          </div>
           <a onClick={() => navigate('/forgot-password')}>🔒 Esqueci minha senha</a>
         </form>
       </div>
