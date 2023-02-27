@@ -1,4 +1,4 @@
-# **Start Front-end App**
+# **Staart Front-end App**
 
 ## Descrição
 Esta aplicação consiste no projeto final da jornada de front-end, proposto para os alunos da plataforma [Staart](https://staart.com/).
