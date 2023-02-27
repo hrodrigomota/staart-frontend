@@ -2,7 +2,7 @@
 
 ## Descrição
 Esta aplicação consiste no projeto final da jornada de front-end, proposto para os alunos da plataforma [Staart](https://staart.com/).
-O projeto se baseia na criação de uma plataforma de estudos semelhante a própria [Staart](https://staart.com/), onde, foi necessário a criação de um layout próprio, além de lidar com o fluxo de uma API criada e disponibilizada previamente para o desenvolvimento da aplicação, que contempla jornadas, cursos e aulas, bem como, as suas respectivas informações detalhadas.
+O projeto se baseia na criação de uma plataforma de estudos semelhante a própria [Staart](https://staart.com/), onde, foi necessário a criação de um layout próprio, além de lidar com os fluxos de uma API criada e disponibilizada previamente para o desenvolvimento da aplicação, que contempla jornadas, cursos e aulas, bem como, as suas respectivas informações detalhadas.
 
 ## Funcionalidades do Projeto
 * ``Login:`` página inicial do projeto, a qual o usuário deverá efetuar o processo de login inserindo um endereço de e-mail e uma senha, que deverá conter no mínimo 6 caracteres. Essa mesma página contempla um link que redireciona para a página de criação de usuário, em caso de primeiro acesso, e um link que redireciona para a página de "Esqueci minha senha", caso o usuário já tenha um cadastro mas, por algum motivo, tenha interesse em redefinir a sua senha.
