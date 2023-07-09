@@ -24,7 +24,7 @@ O projeto se baseia na criação de uma plataforma de estudos semelhante a próp
 
 * ``Aulas:`` página que apresenta a listagem dos módulos e aulas de um determinado curso. A página contempla a logo da staart (link), que ao clicar retorna para a página de listagem das jornadas, um botão de "Voltar", que retorna para a página de listagem dos cursos da jornada em que se encontra a aula, o título e a descrição do curso, e uma listagem de todas as aulas, logo abaixo dos seus respectivos módulos.
 
-## 💻 Tecnologias utilizadas:
+## 💻 Tecnologias utilizadas
 
 <p>Para o desenvolvimento deste projeto, as seguintes linguagens e ferramentas foram utilizadas:</p>
 
@@ -35,7 +35,7 @@ O projeto se baseia na criação de uma plataforma de estudos semelhante a próp
 * [Vercel](https://vercel.com/)
 * [Vite](https://vitejs.dev/)
 
-## 🚀 Deploy:
+## 🚀 Deploy
 
 <p>Clique no link abaixo para acessar o projeto 👇🏾</p>
 
