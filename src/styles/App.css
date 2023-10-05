@@ -37,7 +37,8 @@ h1, h2, h3, a{
 .wrapper-home,
 .wrapper-register,
 .wrapper-forgot-password,
-.wrapper-not-found {
+.wrapper-not-found,
+.wrapper-server-error {
   max-width: 39rem;
   margin: 0 auto;
   padding: 2rem;
@@ -50,6 +51,12 @@ h1, h2, h3, a{
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+}
+
+.wrapper-server-error {
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
 }
 
 .wrapper-forgot-password {
@@ -175,7 +182,8 @@ a:hover {
   .wrapper-home,
   .wrapper-register,
   .wrapper-forgot-password,
-  .wrapper-not-found {
+  .wrapper-not-found,
+  .wrapper-server-error {
     width: 90%;
     max-width: 102.4rem;
   }

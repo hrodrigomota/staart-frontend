@@ -7,16 +7,18 @@ import { useAuth } from "../../context/authContext";
 
 import { Header } from "../../components/Header";
 import { Journey } from "../../components/Journey";
+import { UnavailableServer } from "../../components/UnavailableServer";
 
 export function Journeys() {
   const { logOut } = useAuth();
   const navigate = useNavigate();
   const [journeys, setJourneys] = useState([]);
   const [order, setOrder] = useState("");
+  const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
-    fetch("https://frontend-project.staart.com/journeys").then(
-      async (response) => {
+    fetch("https://frontend-project.staart.com/journeys")
+      .then(async (response) => {
         const body = await response.json();
         setJourneys(
           body.map((journey, index) => ({
@@ -24,8 +26,8 @@ export function Journeys() {
             index,
           }))
         );
-      }
-    );
+      })
+      .catch(setHasError(true));
   }, []);
   async function handleLogout() {
     try {
@@ -47,11 +49,7 @@ export function Journeys() {
 
     if (orderList === "mais-cursos") {
       journeys.sort((a, b) => {
-        return a.coursesID.length > b.coursesID.length
-          ? -1
-          : a.coursesID.length < b.coursesID.length
-          ? 1
-          : 0;
+        return a.coursesID.length > b.coursesID.length ? -1 : a.coursesID.length < b.coursesID.length ? 1 : 0;
       });
     }
 
@@ -60,7 +58,7 @@ export function Journeys() {
         return a.title < b.title ? -1 : a.title > b.title ? 1 : 0;
       });
     }
-    
+
     setOrder(orderList);
   }
 
@@ -82,17 +80,21 @@ export function Journeys() {
         </select>
       </div>
       <div className="container-journeys">
-        {journeys.map((journey) => (
-          <Journey
-            key={journey.pathID}
-            onClick={() => navigate(`/journey/${journey.pathID}`)}
-            id={`_${journey.pathID}`}
-            icon={journey.medias.thumb}
-            title={journey.title}
-            description={journey.description}
-            courses={`${journey.coursesID.length} Cursos`}
-          />
-        ))}
+        {hasError ? (
+          <UnavailableServer />
+        ) : (
+          journeys.map((journey) => (
+            <Journey
+              key={journey.pathID}
+              onClick={() => navigate(`/journey/${journey.pathID}`)}
+              id={`_${journey.pathID}`}
+              icon={journey.medias.thumb}
+              title={journey.title}
+              description={journey.description}
+              courses={`${journey.coursesID.length} Cursos`}
+            />
+          ))
+        )}
       </div>
     </div>
   );
